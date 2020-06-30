@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/dosanHoon/codingtest#readme",
   "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-jest": "^26.1.0",
     "jest": "^26.1.0"
   }
 }
