@@ -1,12 +1,12 @@
+function makeRepeat(length, char) {
+  return new Array(length).fill(char).join("");
+}
 export default function 트리만들기(n) {
-  console.time("calculatingTime")
   let result = "";
   for (let i = 1; i <= n; i++) {
-    result += new Array(n - i).fill(" ").join("");
-    result += new Array(2 * i - 1).fill("*").join("");
-    if (i !== n) result += "\n";
+    result += `${makeRepeat(n - i, " ")}${makeRepeat(2 * i - 1, "*")}${
+      i !== n ? "\n" : ""
+    }`;
   }
-  console.timeEnd('calculatingTime');
-  // return result;
-  return n;
+  return result;
 }
