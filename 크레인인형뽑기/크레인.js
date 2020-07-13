@@ -55,3 +55,32 @@ export function 다른방법(board, moves) {
   });
   return answer;
 }
+
+export function 쏭의solution(board, moves) {
+  let answer = 0;
+  let result = [];
+
+  let newBoard = [];
+
+    for(let i = 0; i < board.length; i++){
+        newBoard[i]=[]
+        for(let j = board.length-1; j >= 0; j--){
+            board[j][i] > 0 && newBoard[i].push(board[j][i])    
+        }
+    }
+    console.log(newBoard)
+
+  moves.forEach((move)=>{
+      if(newBoard[move-1].length === 0) return;
+      const doll =  newBoard[move-1].pop();
+      
+      if(result[result.length-1] === doll){
+         result.length > 0 && result.pop() 
+         answer++;
+      }else{
+        result.push(doll)
+      } 
+  })
+  
+  return answer*2;
+}
