@@ -37,7 +37,6 @@ export function 다른풀이(participant, completion) {
     if (participant[i] !== completion[i]) {
       const endTime = new Date();
       const runTime = endTime - startTime;
-      console.log("다른풀이 runTime", runTime);
       return participant[i];
     }
   }
@@ -51,7 +50,6 @@ export function 또다른풀이(_, $) {
   );
   const endTime = new Date();
   const runTime = endTime - startTime;
-  console.log("또 다른풀이 runTime", runTime);
   return result;
 }
 
@@ -64,6 +62,5 @@ export function 마지막시도(participant, completion) {
   });
   const endTime = new Date();
   const runTime = endTime - startTime;
-  console.log("마지막시도 runTime", runTime);
   return result;
 }

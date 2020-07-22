@@ -5,15 +5,6 @@ import 배열차집합구하기, {
 } from "./배열차집합구하기";
 
 test("배열차집합구하기", () => {
-  //   expect(배열차집합구하기(["leo", "kiki", "eden"], ["eden", "kiki"])).toBe(
-  //     "leo"
-  //   );
-  //   expect(
-  //     배열차집합구하기(
-  //       ["marina", "josipa", "nikola", "vinko", "filipa"],
-  //       ["josipa", "filipa", "marina", "nikola"]
-  //     )
-  //   ).toBe("vinko");
   expect(
     배열차집합구하기(
       [
