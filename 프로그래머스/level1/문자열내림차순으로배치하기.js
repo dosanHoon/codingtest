@@ -5,10 +5,11 @@
 
 const solution = (s) => {
   if (s.length === 1) return s;
-  
+
   return s
     .split("")
     .sort((a, b) => {
+
       return b > a ? 1 : -1;
     })
     .join("");
