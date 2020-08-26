@@ -12,3 +12,17 @@ function solution(s, n) {
     })
     .join("");
 }
+
+function solution(s, n) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === " ") result += " ";
+    const isUpletter = s[i].toUpperCase() === s[i];
+    let code = s.charCodeAt(i) + n;
+    if ((isUpletter && code > 90) || (!isUpletter && code > 122)) {
+      code -= 26;
+    }
+    result += String.fromCharCode(code);
+  }
+  return result;
+}
