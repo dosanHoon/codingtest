@@ -12,3 +12,14 @@ function solution(s) {
   }
   return result;
 }
+
+function solution2(s) {
+  s.split(" ")
+    .map((i) =>
+      i
+        .split("")
+        .map((c, i) => (i % 2 ? c.toLowerCase() : c.toUpperCase()))
+        .join("")
+    )
+    .join(" ");
+}
