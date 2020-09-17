@@ -1,21 +1,21 @@
-function solution(A) {
-  let minIndex = 0;
-  let minAvg = A[0] + A[1] / 2;
+// function solution(A) {
+//   let minIndex = 0;
+//   let minAvg = A[0] + A[1] / 2;
 
-  for (let i = 0; i < A.length - 1; i++) {
-    let sum = A[i];
-    for (let j = i + 1; j < A.length; j++) {
-      sum += A[j];
-      const avg = sum / (j - i + 1);
-      if (minAvg > avg) {
-        minAvg = avg;
-        minIndex = i;
-      }
-    }
-  }
+//   for (let i = 0; i < A.length - 1; i++) {
+//     let sum = A[i];
+//     for (let j = i + 1; j < A.length; j++) {
+//       sum += A[j];
+//       const avg = sum / (j - i + 1);
+//       if (minAvg > avg) {
+//         minAvg = avg;
+//         minIndex = i;
+//       }
+//     }
+//   }
 
-  return minIndex;
-}
+//   return minIndex;
+// }
 
 function solution(A) {
   let min = (A[0] + A[1]) / 2;

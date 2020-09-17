@@ -11,7 +11,6 @@ export default function solution(X, A) {
       leaf[el - 1] = true;
       --position;
     }
-    console.log("position", position);
     if (position === 0) {
       return i;
     }
